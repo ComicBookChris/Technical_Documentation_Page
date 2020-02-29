@@ -1,0 +1,721 @@
+<html>
+
+<head>
+    <title>Technical Documentation Page</title>
+    <style>
+        body {
+            background-color: #FAF3DD;
+            margin: 0 auto;
+            background-position: center;
+            background-size: contain;
+            color: rgb(82, 76, 76);
+            padding: 100px;
+
+        }
+
+        .head1 {
+            font-size: 40px;
+            color: rgb(54, 109, 88);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .head2 {
+            font-size: 17px;
+            margin-left: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .menu {
+            position: sticky top;
+            top: 0;
+            background-color: #8FC1A9;
+            padding: 10px 0px 10px 0px;
+            color: white;
+            margin: 0 auto;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .menu a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 22px;
+            width: auto;
+        }
+
+        .menu-log {
+            right: auto;
+            float: right;
+        }
+
+        footer {
+            width: 100%;
+            bottom: 0px;
+            background-color: #9DBAD5;
+            color: #fff;
+            position: bottom;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+
+        section {
+            padding: 50px;
+        }
+
+        /*try out .flex-container*/
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /*try out img*/
+        img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        section article {
+    color: #4d4e53;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+
+        #main-doc header {
+            text-align: left;
+            margin: 0px;
+        }
+
+        #navbar {
+            position: fixed;
+            min-width: 290px;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 100%;
+            border-right: solid;
+            border-color: rgba(0, 22, 22, 0.4);
+        }
+
+
+        #navbar ul {
+            height: 88%;
+            padding: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+
+
+
+        #navbar li {
+            color: #4d4e53;
+            border-top: 1px solid;
+            list-style: none;
+            position: relative;
+            width: 100%;
+        }
+
+        #navbar a {
+            display: block;
+            padding: 10px 30px;
+            color: #4d4e53;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+
+        .img-responsive {
+            position: absolute;
+            right: 0;
+        }
+
+
+
+
+
+
+        /* Style The Dropdown Button */
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: 10pc;
+            cursor: pointer;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #eedfdf;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            background-color: lavenderblush;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+
+        @media only screen and (max-width: 815px) {
+
+            /* For mobile phones: */
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nav bar-->
+    <div class="dropdown">
+        <span>Grading Scale</span>
+        <div class="dropdown-content">
+            <nav id="navbar">
+
+                <ul>
+                    <li><a class="nav-link" href="#10.0_GEM_MINT_(GM):">10.0 GM Gem Mint</a></li>
+                    <li><a class="nav-link" href="#9.8_NEAR_MINT/MINT_(NM/MT):">9.9 MT Mint</a></li>
+                    <li><a class="nav-link" href="#9.6_NEAR_MINT+_(NM+):">9.6 NM+ Near Mint+</a></li>
+                    <li><a class="nav-link" href="#9.4_NEAR_MINT_(NM):">9.4 NM Near Mint</a></li>
+                    <li><a class="nav-link" href="#9.2_NEAR_MINT-_(NM-):">9.2 NM- Near Mint-</a></li>
+                    <li><a class="nav-link" href="#9.0_VERY_FINE/NEAR_MINT_(VF/NM):">9.0 VF/NM Very Fine/Near Mint</a></li>
+                    <li><a class="nav-link" href="#8.5_VERY_FINE+_(VF+):">8.5 VF+ Very Fine+</a></li>
+                    <li><a class="nav-link" href="#8.0_VERY_FINE_(VF):">8.0 VF Very Fine</a></li>
+                    <li><a class="nav-link" href="#7.5_VERY_FINE-_(VF-):">7.5 VF- Very Fine-</a></li>
+                    <li><a class="nav-link" href="#7.0_FINE/VERY_FINE_(FN/VF):">7.0 FN/VF Fine/Very Fine</a></li>
+                    <li><a class="nav-link" href="#6.5_FINE+_(FN+):">6.5 FN+ Fine+</a></li>
+                    <li><a class="nav-link" href="#6.0_FINE_(FN):">6.0 FN Fine</a></li>
+                    <li><a class="nav-link" href="#5.5_FINE-_(FN-):">5.5 FN- Fine-</a></li>
+                    <li><a class="nav-link" href="#5.0_VERY_GOOD/FINE_(VG/FN):">5.0 VG/FN Very Good/Fine</a></li>
+                    <li><a class="nav-link" href="#4.5_VERY_GOOD+_(VG):">4.5 VG+ Very Good+</a></li>
+                    <li><a class="nav-link" href="#4.0_VERY_GOOD_(VG):">4.0 VG Very Good</a></li>
+                    <li><a class="nav-link" href="#3.5_VERY_GOOD-_(VG-):">3.5 VG- Very Good-</a></li>
+                    <li><a class="nav-link" href="#3.0_GOOD/VERY_GOOD_(GD/VG):">3.0 GD/VG Good/Very Good</a></li>
+                    <li><a class="nav-link" href="#2.5_GOOD+_(GD+):">2.5 GD+ Good+</a></li>
+                    <li><a class="nav-link" href="#2.0_GOOD_(GD):">2.0 GD Good</a></li>
+                    <li><a class="nav-link" href="#1.8_GOOD-_(GD-):">1.8 GD- Good-</a></li>
+                    <li><a class="nav-link" href="#1.5_FAIR/GOOD_(FR/GD):">1.5 FR/GD Fair/Good</a></li>
+                    <li><a class="nav-link" href="#1.0_FAIR_(FR):">1.0 FR Fair</a></li>
+                    <li><a class="nav-link" href="#0.5_POOR_(PR):">0.5 PR Poor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <main id="main-doc">
+        <section class="main-section" id="COMICBOOK_CHRIS_UNDERSTANDING_THE_COMPLEXITIES_OF_COMICBOOK_GRADING.">
+
+            <!-- Header Section -->
+            <header id="header">
+                <div class="head1">Comicbook Chris</div>
+                <div class="head2">Understanding the complexities of comicbook grading.</div>
+            </header>
+
+            <!-- Menu Navigation Bar -->
+            <div class="menu">
+                <a href="#home">HOME</a>
+                <a href="#news">NEWS</a>
+                <a href="#notification">NOTIFICATIONS</a>
+                <div class="menu-log">
+                    <a href="#login">LOGIN</a>
+                </div>
+            </div>
+
+            <!--"Create id="Main-doc"-->
+
+            <main id="main-doc">
+                <section class="main-section" id="10.0_GEM_MINT_(GM):">
+                    <header>
+                        <h2>10.0 GEM MINT (GM):</h2>
+                    </header>
+                    <p>
+                        An exceptional example of a given book - the best ever seen. Only the slightest bindery or
+                        printing
+                        defects are allowed. Cover is flat with no surface wear. Inks are bright with high reflectivity.
+                        Corners
+                        are cut square and sharp. Spine is tight and flat. Staples must be original, centered and clean
+                        with no
+                        rust. Paper is white, supple and fresh. No interior autographs or owner signatures.
+                    </p>
+                </section>
+                <section class="main-section" id="9.9_MINT_(MT):">
+                    <header>
+                        <h2>9.9 MINT (MT):</h2>
+                    </header>
+                    <p>Near perfect in every way. Only subtle bindery or printing defects are allowed. Cover is flat
+                        with no
+                        surface wear. Inks are bright with high reflectivity and minimal fading. Corners are cut square
+                        and
+                        sharp. Small, inconspicuous, lightly penciled, stamped or inked arrival dates are acceptable as
+                        long as
+                        they are in an unobtrusive location. Spine is tight and flat. Staples must be original,
+                        generally
+                        centered and clean with no rust. Paper is white, supple and fresh.</p>
+
+                </section>
+                <section class="main-section" id="9.8_NEAR_MINT/MINT_(NM/MT):">
+                    <header>
+                        <h2>9.8 NEAR MINT/MINT (NM/MT):</h2>
+                    </header>
+                    <p> Nearly perfect in every way with only minor imperfections that keep it from the next higher
+                        grade. Only
+                        subtle bindery or printing defects are allowed. Cover is flat with no surface wear. Inks are
+                        bright with
+                        high reflectivity and minimal fading. Corners are cut square and sharp. Small, inconspicuous,
+                        lightly
+                        penciled, stamped or inked arrival dates are acceptable as long as they are in an unobtrusive
+                        location.
+                        Spine is tight and flat. Staples must be original, generally centered and clean with no rust.
+                        Paper is
+                        white, supple and fresh. Only the slightest interior tears are allowed.</p>
+
+                </section>
+                <section class="main-section" id="9.6_NEAR_MINT+_(NM+):">
+                    <header>
+                        <h2>9.6 NEAR MINT+ (NM+):</h2>
+                    </header>
+                    <p>Nearly perfect with a minor additional virtue or virtues that raise it from Near Mint. Only
+                        subtle
+                        bindery or printing defects are allowed. No bindery tears are allowed, although on Golden Age
+                        books
+                        bindery tears of up to 1/8" have been noted. Cover is flat with no surface wear. Inks are bright
+                        with
+                        high reflectivity and a minimum of fading. One corner may be almost imperceptibly blunted, but
+                        still
+                        almost sharp and cut square. Almost imperceptible indentations are permissible, but no creases,
+                        bends,
+                        or color break. Small, inconspicuous, lightly penciled, stamped or inked arrival dates are
+                        acceptable as
+                        long as they are in an unobtrusive location. Spine is tight and flat. Staples must be original,
+                        generally centered, with only the slightest discoloration. Paper is off-white, supple and fresh.
+                        Only
+                        the slightest interior tears are allowed.</p>
+                </section>
+                <section class="main-section" id="9.4_NEAR_MINT_(NM):">
+                    <header>
+                        <h2>9.4 NEAR MINT (NM):</h2>
+                    </header>
+                    <p>Nearly perfect with only minor imperfections that keep it from the next higher grade. Subtle
+                        bindery/printing defects are allowed. Bindery tears must be less than 1/16" on Silver Age and
+                        later
+                        books, although on Golden Age books bindery tears of up to 1/4" have been noted. Cover is flat
+                        with no
+                        surface wear. Inks are bright with high reflectivity and a minimum of fading. Corners are cut
+                        square and
+                        sharp with ever-so-slight blunting permitted. A 1/16" bend is permitted with no color break.
+                        Small,
+                        inconspicuous, lightly penciled, stamped or inked arrival dates are acceptable as long as they
+                        are in an
+                        unobtrusive location. Slight foxing. Spine is tight and flat. Staples are generally centered;
+                        may have
+                        slight discoloration. Almost no stress lines. Paper is off-white to cream, supple and fresh.
+                        Slight
+                        interior tears are allowed.</p>
+
+                </section>
+                <section class="main-section" id="9.2_NEAR_MINT-_(NM-):">
+                    <header>
+                        <h2>9.2 NEAR MINT- (NM-):</h2>
+                    </header>
+                    <p>Nearly perfect with only a minor additional defect or defects that keep it from Near Mint. A
+                        limited
+                        number of minor bindery/printing defects are allowed. Cover is flat with no surface wear. Inks
+                        are
+                        bright with only the slightest dimming of reflectivity. Corners are cut square and sharp with
+                        ever-so-slight blunting permitted. A 1/16-1/8" bend is permitted with no color break. Small,
+                        inconspicuous, lightly penciled, stamped or inked arrival dates are acceptable as long as they
+                        are in an
+                        unobtrusive location. Slight foxing. Spine is tight and flat. Staples may show some
+                        discoloration.
+                        Almost no stress lines. Paper is off-white to cream, supple and fresh. Slight interior tears are
+                        allowed.</p>
+
+                </section>
+                <section class="main-section" id="9.0_VERY_FINE/NEAR_MINT_(VF/NM):">
+                    <header>
+                        <h2>9.0 VERY FINE/NEAR MINT (VF/NM):</h2>
+                    </header>
+
+                    <p>Nearly perfect with outstanding eye appeal. A limited number of bindery/printing defects are
+                        allowed.
+                        Cover is almost flat with almost imperceptible wear. Inks are bright with slightly diminished
+                        reflectivity. An 1/8" bend is allowed if color is not broken. Corners are cut square and sharp
+                        with
+                        ever-so-slight blunting permitted but no creases. Several lightly penciled, stamped or inked
+                        arrival
+                        dates are acceptable. Very minor foxing. Spine is tight and flat. Staples may show some
+                        discoloration.
+                        Only the slightest staple tears are allowed. A very minor accumulation of stress lines may be
+                        present if
+                        they are nearly imperceptible. Paper is off-white to cream and supple. Very minor interior tears
+                        may be
+                        present.</p>
+
+                </section>
+                <section class="main-section" id="8.5_VERY_FINE+_(VF+):">
+                    <header>
+                        <h2>8.5 VERY FINE+ (VF+):</h2>
+                    </header>
+                    <p>
+                        Fits the criteria for Very Fine but with an additional virtue or small accumulation of virtues
+                        that
+                        improves the book's appearance by a perceptible amount.
+                    </p>
+                </section>
+                <section class="main-section" id="8.0_VERY_FINE_(VF):">
+                    <header>
+                        <h2>8.0 VERY FINE (VF):</h2>
+                    </header>
+                    <p>An excellent copy with outstanding eye appeal. A limited accumulation of minor bindery/printing
+                        defects
+                        is allowed. Cover is relatively flat with minimal surface wear beginning to show, possibly
+                        including
+                        some minute wear at corners. Inks are generally bright with moderate to high reflectivity. An
+                        unnoticeable 1/4" crease is acceptable if color is not broken. Stamped or inked arrival dates
+                        may be
+                        present. Minor foxing. Spine is almost completely flat with a possible minor color break.
+                        Staples may
+                        show some discoloration. Very slight staple tears and a few almost insignificant stress lines
+                        may be
+                        present. Paper is cream to tan and supple. Centerfold is mostly secure. Minor interior tears at
+                        the
+                        margin may be present.</p>
+
+                </section>
+                <section class="main-section" id="7.5_VERY_FINE-_(VF-):">
+                    <header>
+                        <h2>7.5 VERY FINE- (VF-):</h2>
+                    </header>
+                    <p>Fits the criteria for Very Fine but with an additional defect or small accumulation of defects
+                        that
+                        detracts from the book's appearance by a perceptible amount.</p>
+
+                </section>
+                <section class="main-section" id="7.0_FINE/VERY_FINE_(FN/VF):">
+                    <header>
+                        <h2>7.0 FINE/VERY FINE (FN/VF):</h2>
+                    </header>
+                    <p>An above-average copy that shows minor wear but is still relatively flat and clean with
+                        outstanding eye
+                        appeal. A small accumulation of minor bindery/printing defects is allowed. Minor cover wear
+                        beginning to
+                        show, possibly including minor creases. Corners may be blunted. Inks are generally bright with a
+                        moderate reduction in reflectivity. Stamped or inked arrival dates may be present. Minor foxing.
+                        The
+                        slightest spine roll may be present, as well as a possible moderate color break. Staples may
+                        show some
+                        discoloration. Slight staple tears and a small accumulation of light stress lines may be
+                        present. Slight
+                        rust migration. Paper is cream to tan. Centerfold is mostly secure. Minor interior tears at the
+                        margin
+                        may be present.</p>
+                </section>
+                <section class="main-section" id="6.5_FINE+_(FN+):">
+                    <header>
+                        <h2>6.5 FINE+ (FN+): </h2>
+                    </header>
+                    <p>Fits the criteria for Fine but with an additional virtue or small accumulation of virtues that
+                        improves
+                        the book's appearance by a perceptible amount.</p>
+
+                </section>
+
+                <!--Added a pic here-->
+
+                <div class="flex-container">
+                    <img src="https://imgix.ranker.com/user_node_img/125/2486533/original/poison-ivy-comic-book-characters-photo-u20?w=650&q=50&fm=pjpg&fit=crop&crop=faces"
+                        alt="Poison Ivy" style="width:100%;">
+
+                </div>
+                <section class="main-section" id="6.0_FINE_(FN):">
+                    <header>
+                        <h2>6.0 FINE (FN):</h2>
+                    </header>
+                    <p>An above-average copy that shows minor wear but is still relatively flat and clean with no
+                        significant
+                        creasing or other serious defects. Some accumulation of minor bindery/printing defects is
+                        allowed. Minor
+                        cover wear apparent, with minor to moderate creases. Inks show a significant reduction in
+                        reflectivity.
+                        Blunted corners are more common, as is minor staining, soiling, discoloration, and/or foxing.
+                        Stamped or
+                        inked arrival dates may be present. A minor spine roll is allowed. There can also be a 1/4"
+                        spine split
+                        or severe color break. Staples may show minor discoloration. Minor staple tears and a few slight
+                        stress
+                        lines may be present, as well as minor rust migration. Paper is tan to brown and fairly supple
+                        with no
+                        signs of brittleness. Minor interior tears at the margin may be present. Centerfold may be
+                        loose.</p>
+
+                </section>
+                <section class="main-section" id="5.5_FINE-_(FN-):">
+                    <header>
+                        <h2>5.5 FINE- (FN-):</h2>
+                    </header>
+
+                    <p>Fits the criteria for Fine but with an additional defect or small accumulation of defects that
+                        detracts
+                        from the book's appearance by a perceptible amount.</p>
+
+                </section>
+                <section class="main-section" id="5.0_VERY_GOOD/FINE_(VG/FN):">
+                    <header>
+                        <h2>5.0 VERY GOOD/FINE (VG/FN):</h2>
+                    </header>
+                    <p>
+                        An above-average but well used comic book. An accumulation of bindery/printing defects is
+                        allowed. Minor
+                        to moderate cover wear apparent, with minor to moderate creases and/or dimples. Inks have
+                        moderate to
+                        low reflectivity. Blunted corners are increasingly common, as is minor to moderate staining,
+                        discoloration, and/or foxing. Stamped or inked arrival dates may be present. A minor to moderate
+                        spine
+                        roll is allowed. A spine split of up to 1/2" may be present. Staples may show minor
+                        discoloration. Minor
+                        staple tears and minor stress lines may also be present, as well as minor rust migration. Paper
+                        is tan
+                        to brown with no signs of brittleness. Centerfold may be loose. Minor interior tears may also be
+                        present.
+                    </p>
+                </section>
+                <section class="main-section" id="4.5_VERY_GOOD+_(VG):">
+                    <header>
+                        <h2>4.5 VERY GOOD+ (VG):</h2>
+                    </header>
+                    <p>Fits the criteria for Very Good but with an additional virtue or small accumulation of virtues
+                        that
+                        improves the book's appearance by a perceptible amount.</p>
+
+                </section>
+                <section class="main-section" id="4.0_VERY_GOOD_(VG):">
+                    <header>
+                        <h2>4.0 VERY GOOD (VG):</h2>
+                    </header>
+                    <p>The average used comic book. Cover shows moderate to significant wear, and may be loose but not
+                        completely detached. Cover reflectivity is low. Can have moderate creases or dimples. Corners
+                        may be
+                        blunted. Store stamps, name stamps, arrival dates, initials, etc. have no effect on this grade.
+                        Some
+                        discoloration, fading, foxing, and even minor soiling is allowed. As much as a 1/4" triangle can
+                        be
+                        missing out of the corner or edge; a missing 1/8" square is also acceptable. Only minor
+                        unobtrusive tape
+                        and other amateur repair allowed on otherwise high grade copies. Moderate spine roll may be
+                        present
+                        and/or a 1" spine split. Staples may be discolored. Minor to moderate staple tears and stress
+                        lines may
+                        be present, as well as some rust migration. Paper is brown but not brittle. Minor to moderate
+                        interior
+                        tears may be present. Centerfold may be loose or detached at one staple.</p>
+
+                </section>
+                <section class="main-section" id="3.5_VERY_GOOD-_(VG-):">
+                    <header>
+                        <h2>3.5 VERY GOOD- (VG-):</h2>
+                    </header>
+                    <p>Fits the criteria for Very Good but with an additional defect or small accumulation of defects
+                        that
+                        detracts from the book's appearance by a perceptible amount.</p>
+                </section>
+                <section class="main-section" id="3.0_GOOD/VERY_GOOD_(GD/VG):">
+                    <header>
+                        <h2>3.0 GOOD/VERY GOOD (GD/VG):</h2>
+                    </header>
+                    <p>A used comic book showing some substantial wear. Cover shows significant wear, and may be loose
+                        or even
+                        detached at one staple. Cover reflectivity is very low. Can have a book-length crease and/or
+                        dimples.
+                        Corners may be blunted or even rounded. Discoloration, fading, foxing, and even minor to
+                        moderate
+                        soiling is allowed. A triangle from 1/4" to 1/2" can be missing out of the corner or edge; a
+                        missing
+                        1/8" to 1/4" square is also acceptable. Tape and other amateur repair may be present. Moderate
+                        spine
+                        roll likely. May have a spine split of anywhere from 1" to 1-1/2". Staples may be rusted or
+                        replaced.
+                        Minor to moderate staple tears and moderate stress lines may be present, as well as some rust
+                        migration.
+                        Paper is brown but not brittle. Centerfold may be loose or detached at one staple. Minor to
+                        moderate
+                        interior tears may be present.</p>
+
+                </section>
+                <section class="main-section" id="2.5_GOOD+_(GD+):">
+                    <header>
+                        <h2>2.5 GOOD+ (GD+):</h2>
+                    </header>
+                    <p>Fits the criteria for Good but with an additional virtue or small accumulation of virtues that
+                        improves
+                        the book's appearance by a perceptible amount.</p>
+
+                </section>
+                <section class="main-section" id="2.0_GOOD_(GD):">
+                    <header>
+                        <h2>2.0 GOOD (GD):</h2>
+                    </header>
+
+                    <p>Shows substantial wear; often considered a "reading copy." Cover shows significant wear and may
+                        even be
+                        detached. Cover reflectivity is low and in some cases completely absent. Book-length creases and
+                        dimples
+                        may be present. Rounded corners are more common. Moderate soiling, staining, discoloration and
+                        foxing
+                        may be present. The largest piece allowed missing from the front or back cover is usually a 1/2"
+                        triangle or a 1/4" square, although some Silver Age books such as 1960s Marvels have had the
+                        price
+                        corner box clipped from the top left front cover and may be considered Good if they would
+                        otherwise have
+                        graded higher. Tape and other forms of amateur repair are common in Silver Age and older books.
+                        Spine
+                        roll is likely. May have up to a 2" spine split. Staples may be degraded, replaced or missing.
+                        Moderate
+                        staple tears and stress lines may be present, as well as rust migration. Paper is brown but not
+                        brittle.
+                        Centerfold may be loose or detached. Moderate interior tears may be present.</p>
+                </section>
+                <section class="main-section" id="1.8_GOOD-_(GD-):">
+                    <header>
+                        <h2>1.8 GOOD- (GD-):</h2>
+                    </header>
+                    <p>Fits the criteria for Good but with an additional defect or small accumulation of defects that
+                        detracts
+                        from the book's appearance by a perceptible amount.</p>
+                </section>
+                <section class="main-section" id="1.5_FAIR/GOOD_(FR/GD):">
+                    <header>
+                        <h2>1.5 FAIR/GOOD (FR/GD):</h2>
+                    </header>
+                    <p>Shows substantial to heavy wear. Books in this grade are commonly creased, scuffed, abraded,
+                        soiled, and
+                        possibly unattractive, but still generally readable. Cover shows considerable wear and may be
+                        detached.
+                        Almost no cover reflectivity remaining. Book-length creases, tears and folds may be present.
+                        Rounded
+                        corners are increasingly common. Soiling, staining, discoloration and foxing is generally
+                        present. Up to
+                        1/10 of the back cover may be missing. Tape and other forms of amateur repair are increasingly
+                        common in
+                        Silver Age and older books. Spine roll is common. May have a spine split between 2" and 2/3 the
+                        length
+                        of the book. Staples may be degraded, replaced or missing. Staple tears and stress lines are
+                        common, as
+                        well as rust migration. Paper is brown and may show brittleness around the edges. Acidic odor
+                        may be
+                        present. Centerfold may be loose or detached. Interior tears are common.</p>
+
+                </section>
+                <section class="main-section" id="1.0_FAIR_(FR):">
+                    <header>
+                        <h2>1.0 FAIR (FR):</h2>
+                    </header>
+                    <p>Shows heavy wear. Some collectors consider this the lowest collectible grade because comic books
+                        in
+                        lesser condition are usually incomplete and/or brittle. Cover may be detached, and inks have
+                        lost all
+                        reflectivity. Creases, tears and/or folds are prevalent. Corners are commonly rounded or absent.
+                        Soiling
+                        and staining is present. Books in this condition generally have all pages and most of the
+                        covers,
+                        although there may be up to 1/4 of the front cover missing or no back cover, but not both. Tape
+                        and
+                        other forms of amateur repair are more common. Spine roll is more common; spine split can extend
+                        up to
+                        2/3 the length of the book. Staples may be missing or show rust and discoloration. An
+                        accumulation of
+                        staple tears and stress lines may be present, as well as rust migration. Paper is brown and may
+                        show
+                        brittleness around the edges but not in the central portion of the pages. Acidic odor may be
+                        present.
+                        Accumulation of interior tears. Chunks may be missing. The centerfold may be missing if
+                        readability is
+                        generally preserved. Coupons may be cut.</p>
+
+                </section>
+                <section class="main-section" id="0.5_POOR_(PR):">
+                    <header>
+                        <h2>0.5 POOR (PR):</h2>
+                    </header>
+
+                    <p>Sufficiently degraded to the point where there is little or no collector value; easily identified
+                        by a
+                        complete absence of eye appeal. Brittle almost to the point of turning to dust with a touch, and
+                        usually
+                        incomplete. Extreme fading may render the cover almost indiscernible. May have extremely severe
+                        stains,
+                        mildew or heavy cover abrasion to the point that some cover inks are indistinct/absent. Covers
+                        may be
+                        detached with large chunks missing. Can have extremely ragged edges and extensive creasing.
+                        Corners are
+                        rounded or virtually absent. Covers may have been defaced with paints, varnishes, glues, oil,
+                        indelible
+                        markers or dyes, and may have suffered heavy water damage. Can also have extensive amateur
+                        repairs such
+                        as laminated covers. Extreme spine roll present; can have extremely ragged spines or a complete,
+                        book-length split. Staples can be missing or show extreme rust and discoloration. Extensive
+                        staple tears
+                        and stress lines may be present, as well as extreme rust migration. Paper exhibits moderate to
+                        severe
+                        brittleness (where the comic book literally falls apart when examined). Extreme acidic odor may
+                        be
+                        present. Extensive interior tears. Multiple pages, including the centerfold, may be missing that
+                        affect
+                        readability. Coupons may be cut.</p>
+                </section>
+            </main>
+
+</body>
+
+
+
+
+<!-- Footer Section -->
+<footer id="footer">Grading and defintions has been established by the <a
+        href="https://comics.ha.com/tutorial/comics-grading.s?show=comicdefinitions" target="_blank"><i>Heritage
+            Auctions</i></a>
+</footer>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</script>
+
+</html>
