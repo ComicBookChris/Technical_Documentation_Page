@@ -84,11 +84,28 @@
         }
 
         section article {
-    color: #4d4e53;
-    margin: 15px;
-    font-size: 0.96em;
-}
+            color: #4d4e53;
+            margin: 15px;
+            font-size: 0.96em;
+        }
 
+        section li {
+            margin: 15px 0px 0px 20px;
+        }
+
+        code {
+            display: block;
+            text-align: left;
+            white-space: pre;
+            position: relative;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 2;
+            background-color: #f7f7f7;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+        }
 
         #main-doc header {
             text-align: left;
@@ -159,6 +176,7 @@
         .dropdown {
             position: relative;
             display: inline-block;
+           
         }
 
         .dropdown-content {
@@ -178,6 +196,8 @@
             text-decoration: none;
             display: block;
             background-color: lavenderblush;
+           
+
         }
 
         /* Change color of dropdown links on hover */
@@ -202,6 +222,20 @@
 
 
         }
+
+        #main-doc {
+            margin-left: -10px;
+        }
+
+        code {
+            margin-left: -20px;
+            width: 100%;
+            padding: 15px;
+            padding-left: 10px;
+            padding-right: 45px;
+            min-width: 233px;
+        }
+        }
     </style>
 </head>
 
@@ -211,32 +245,37 @@
         <span>Grading Scale</span>
         <div class="dropdown-content">
             <nav id="navbar">
-
+<header>
+    Grade Scale
+</header>
                 <ul>
-                    <li><a class="nav-link" href="#10.0_GEM_MINT_(GM):">10.0 GM Gem Mint</a></li>
-                    <li><a class="nav-link" href="#9.8_NEAR_MINT/MINT_(NM/MT):">9.9 MT Mint</a></li>
-                    <li><a class="nav-link" href="#9.6_NEAR_MINT+_(NM+):">9.6 NM+ Near Mint+</a></li>
-                    <li><a class="nav-link" href="#9.4_NEAR_MINT_(NM):">9.4 NM Near Mint</a></li>
-                    <li><a class="nav-link" href="#9.2_NEAR_MINT-_(NM-):">9.2 NM- Near Mint-</a></li>
-                    <li><a class="nav-link" href="#9.0_VERY_FINE/NEAR_MINT_(VF/NM):">9.0 VF/NM Very Fine/Near Mint</a></li>
-                    <li><a class="nav-link" href="#8.5_VERY_FINE+_(VF+):">8.5 VF+ Very Fine+</a></li>
-                    <li><a class="nav-link" href="#8.0_VERY_FINE_(VF):">8.0 VF Very Fine</a></li>
-                    <li><a class="nav-link" href="#7.5_VERY_FINE-_(VF-):">7.5 VF- Very Fine-</a></li>
-                    <li><a class="nav-link" href="#7.0_FINE/VERY_FINE_(FN/VF):">7.0 FN/VF Fine/Very Fine</a></li>
-                    <li><a class="nav-link" href="#6.5_FINE+_(FN+):">6.5 FN+ Fine+</a></li>
-                    <li><a class="nav-link" href="#6.0_FINE_(FN):">6.0 FN Fine</a></li>
-                    <li><a class="nav-link" href="#5.5_FINE-_(FN-):">5.5 FN- Fine-</a></li>
-                    <li><a class="nav-link" href="#5.0_VERY_GOOD/FINE_(VG/FN):">5.0 VG/FN Very Good/Fine</a></li>
-                    <li><a class="nav-link" href="#4.5_VERY_GOOD+_(VG):">4.5 VG+ Very Good+</a></li>
-                    <li><a class="nav-link" href="#4.0_VERY_GOOD_(VG):">4.0 VG Very Good</a></li>
-                    <li><a class="nav-link" href="#3.5_VERY_GOOD-_(VG-):">3.5 VG- Very Good-</a></li>
-                    <li><a class="nav-link" href="#3.0_GOOD/VERY_GOOD_(GD/VG):">3.0 GD/VG Good/Very Good</a></li>
-                    <li><a class="nav-link" href="#2.5_GOOD+_(GD+):">2.5 GD+ Good+</a></li>
-                    <li><a class="nav-link" href="#2.0_GOOD_(GD):">2.0 GD Good</a></li>
-                    <li><a class="nav-link" href="#1.8_GOOD-_(GD-):">1.8 GD- Good-</a></li>
-                    <li><a class="nav-link" href="#1.5_FAIR/GOOD_(FR/GD):">1.5 FR/GD Fair/Good</a></li>
-                    <li><a class="nav-link" href="#1.0_FAIR_(FR):">1.0 FR Fair</a></li>
-                    <li><a class="nav-link" href="#0.5_POOR_(PR):">0.5 PR Poor</a></li>
+                    <li><a class="nav-link" href="#10.0_GEM_MINT_(GM):">10.0 GEM MINT (GM):</a></li>
+                    <li><a class="nav-link" href="#9.9_MINT_(MT):">9.9 MINT (MT):</a></li>
+                    <li><a class="nav-link" href="#9.8_NEAR_MINT/MINT_(NM/MT):">9.8 NEAR MINT/MINT (NM/MT):</a></li>
+                    <li><a class="nav-link" href="#9.6_NEAR_MINT+_(NM+):">9.6 NEAR MINT+ (NM+):</a></li>
+                    <li><a class="nav-link" href="#9.4_NEAR_MINT_(NM):">9.4 NEAR MINT (NM):</a></li>
+                    <li><a class="nav-link" href="#9.2_NEAR_MINT-_(NM-):">9.2 NEAR MINT- (NM-):</a></li>
+                    <li><a class="nav-link" href="#9.0_VERY_FINE/NEAR_MINT_(VF/NM):">9.0 VERY FINE/NEAR MINT (VF/NM):</a></li>
+                    <li><a class="nav-link" href="#8.5_VERY_FINE+_(VF+):">8.5 VERY FINE+ (VF+):</a></li>
+                    <li><a class="nav-link" href="#8.0_VERY_FINE_(VF):">8.0 VERY FINE (VF):</a></li>
+                    <li><a class="nav-link" href="#7.5_VERY_FINE-_(VF-):">7.5 VERY FINE- (VF-):</a></li>
+                    <li><a class="nav-link" href="#7.0_FINE/VERY_FINE_(FN/VF):">7.0 FINE/VERY FINE (FN/VF):</a></li>
+                    <li><a class="nav-link" href="#6.5_FINE+_(FN+):">6.5 FINE+ (FN+):</a></li>
+                    <li><a class="nav-link" href="#6.0_FINE_(FN):">6.0 FINE (FN):</a></li>
+                    <li><a class="nav-link" href="#5.5_FINE-_(FN-):">5.5 FINE- (FN-):</a></li>
+                    <li><a class="nav-link" href="#5.0_VERY_GOOD/FINE_(VG/FN):">5.0 VERY GOOD/FINE (VG/FN):</a></li>
+                    <li><a class="nav-link" href="#4.5_VERY_GOOD+_(VG+):">4.5 VERY GOOD+ (VG+):</a></li>
+                    <li><a class="nav-link" href="#4.0_VERY_GOOD_(VG):">4.0 VERY GOOD (VG):</a></li>
+                    <li><a class="nav-link" href="#3.5_VERY_GOOD-_(VG-):">3.5 VERY GOOD- (VG-):</a></li>
+                    <li><a class="nav-link" href="#3.0_GOOD/VERY_GOOD_(GD/VG):">3.0 GOOD/VERY GOOD (GD/VG):</a></li>
+                    <li><a class="nav-link" href="#2.5_GOOD+_(GD+):">2.5 GOOD+ (GD+):</a></li>
+                    <li><a class="nav-link" href="#2.0_GOOD_(GD):">2.0 GOOD (GD):</a></li>
+                    <li><a class="nav-link" href="#1.8_GOOD-_(GD-):">1.8 GOOD- (GD-):</a></li>
+                    <li><a class="nav-link" href="#1.5_FAIR/GOOD_(FR/GD):">1.5 FAIR/GOOD (FR/GD):</a></li>
+                    <li><a class="nav-link" href="#1.0_FAIR_(FR):">1.0 FAIR (FR):</a></li>
+                    <li><a class="nav-link" href="#0.5_POOR_(PR):">0.5 POOR (PR):</a></li>
+
+                    <li><a class="nav-link" href="#COMICBOOK_CHRIS">Comicbook Chris</a></li>
                 </ul>
             </nav>
         </div>
@@ -244,12 +283,12 @@
 
 
     <main id="main-doc">
-        <section class="main-section" id="COMICBOOK_CHRIS_UNDERSTANDING_THE_COMPLEXITIES_OF_COMICBOOK_GRADING.">
+        <section class="main-section" id="COMICBOOK_CHRIS">
 
             <!-- Header Section -->
             <header id="header">
                 <div class="head1">Comicbook Chris</div>
-                <div class="head2">Understanding the complexities of comicbook grading.</div>
+               
             </header>
 
             <!-- Menu Navigation Bar -->
@@ -278,6 +317,11 @@
                         with no
                         rust. Paper is white, supple and fresh. No interior autographs or owner signatures.
                     </p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <code>
+                        </code>
                 </section>
                 <section class="main-section" id="9.9_MINT_(MT):">
                     <header>
@@ -292,7 +336,12 @@
                         they are in an unobtrusive location. Spine is tight and flat. Staples must be original,
                         generally
                         centered and clean with no rust. Paper is white, supple and fresh.</p>
-
+                        
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <code>
+                            </code>
                 </section>
                 <section class="main-section" id="9.8_NEAR_MINT/MINT_(NM/MT):">
                     <header>
@@ -309,7 +358,12 @@
                         Spine is tight and flat. Staples must be original, generally centered and clean with no rust.
                         Paper is
                         white, supple and fresh. Only the slightest interior tears are allowed.</p>
-
+                        
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <code>
+                            </code>
                 </section>
                 <section class="main-section" id="9.6_NEAR_MINT+_(NM+):">
                     <header>
@@ -331,6 +385,12 @@
                         generally centered, with only the slightest discoloration. Paper is off-white, supple and fresh.
                         Only
                         the slightest interior tears are allowed.</p>
+                        
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <code>
+                            </code>
                 </section>
                 <section class="main-section" id="9.4_NEAR_MINT_(NM):">
                     <header>
@@ -352,6 +412,12 @@
                         slight discoloration. Almost no stress lines. Paper is off-white to cream, supple and fresh.
                         Slight
                         interior tears are allowed.</p>
+                        
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <code>
+                            </code>
 
                 </section>
                 <section class="main-section" id="9.2_NEAR_MINT-_(NM-):">
@@ -391,6 +457,7 @@
                         they are nearly imperceptible. Paper is off-white to cream and supple. Very minor interior tears
                         may be
                         present.</p>
+                       
 
                 </section>
                 <section class="main-section" id="8.5_VERY_FINE+_(VF+):">
@@ -520,9 +587,9 @@
                         present.
                     </p>
                 </section>
-                <section class="main-section" id="4.5_VERY_GOOD+_(VG):">
+                <section class="main-section" id="4.5_VERY_GOOD+_(VG+):">
                     <header>
-                        <h2>4.5 VERY GOOD+ (VG):</h2>
+                        <h2>4.5 VERY GOOD+ (VG+):</h2>
                     </header>
                     <p>Fits the criteria for Very Good but with an additional virtue or small accumulation of virtues
                         that
